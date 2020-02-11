@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        #main{
+            width: 100%;
+            height: 100%;
+        }
+        #main > #title{
+            width: 100%;
+            height: 65px;
+            text-align: center;
+            line-height: 65px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        #main > #mapImg{
+            width: 100%;
+            height: 400px;
+        }
+        #main > #subtitle{
+            width: 100%;
+            height: 50px;
+            line-height: 45px;
+            font-size: 16.5px;
+            font-weight: bold;
+        }
+        #main > #subtitle > img{
+            width: 16px;
+            height: 13px;
+            margin: 0px 5px 0px 10px;
+        }
+        #main > #table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #main > #table > thead{
+            height: 45px;
+            background-color: #00a0c6;
+            color: white;
+            line-height: 45px;
+        }
+        #main > #table > thead tr th{
+            font-weight: normal;
+            font-size: 16.5px;
+        }
+        #main > #table > tbody > #first > td,
+        #main > #table > tbody > #second > td,
+        #main > #table > tbody > #third > td{
+            padding: 10px;
+            text-align: center;
+        }
+        #main > #table > tbody > #second {
+            background-color: #fafafa;
+        }
+        #main > #table > tbody tr td:first-child{
+            color: #777;
+        }
+        #main > #table > tbody tr td p{ 
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p id="title">교통통제 확인하세요!</p>
+        <img src="example.PNG" alt="map" id="mapImg">
+        <p id="subtitle"><img src="goal.png" alt="flag">1/18 서울 도심 주요 집회 행진 예정사항</p>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>행진시간</th>
+                    <th>집회 및 행진차로</th>
+                    <th>진행차로</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="first">
+                    <td width="25%">16:30 ~ 18:00</td>
+                    <td width="45%">동화면세점 ↔ 진명초소</td>
+                    <td width="30%">진행방향 2차로</td>
+                </tr>
+                <tr id="second">
+                    <td width="25%">15:00 ~ 17:30</td>
+                    <td width="45%">파이낸스 ↔ 한은교차로<p>(파이낸스 → 세종4 → 숭례문 → 대한문 → 파이낸스)</p></p></td>
+                    <td width="30%">진행방향 2차로</td>
+                </tr>
+                <tr id="third">
+                    <td width="25%">17:00 ~ 19:00</td>
+                    <td width="45%">대한문 ↔ 효자파출소<p>(대한문 → 광화문 → 종로3가)</p></td>
+                    <td width="30%">진행방향 2차로</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
